@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.table{
+    width: 100%;
+    height: auto;
+    min-height: 270px;
+    /* height: 270px; */
+    /* overflow: hidden; */
+    /* max-height: 350px; */
+    margin-top: 20px;
+}
+
+.table table{
+    width: 100%;
+}
+
+.table tr, td, th{
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 3px;
+    color: #777;
+    background-color: #f5f6f8;
+}
+
+.table th, tr, td{
+    padding: 10px;
+}

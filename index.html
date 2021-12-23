@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
+    <title>Data Table Javascript</title>
+</head>
+<body>
+    <div class="todos_leads">
+        <header class="leads_table_header">
+            <h3>Todos</h3>
+        </header>
+        <table id="myTable" >
+            <thead>
+                <tr>
+                    <th>Selecione</th>
+                    <th>Tipo de Consórcio</th> 
+                    <th>Nome</th>
+                    <th>Contato</th>
+                    <th>Data do envio do Lead</th> 
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Fernanda</td>
+                    <td>Honda 150</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Em andamento</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Joao</td>
+                    <td>Lander 250</td>
+                    <td></td>
+                    <td>15/07/2021</td>
+                    <td>Contemplado</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Paulo</td>
+                    <td>Fazer 600</td>
+                    <td></td>
+                    <td>24/03/2021</td>
+                    <td>Novo</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Renata</td>
+                    <td>Hornet 600</td>
+                    <td></td>
+                    <td>05/04/2021</td>
+                    <td>Em andamento</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Marinalva</td>
+                    <td>Tiger 1200</td>
+                    <td></td>
+                    <td>12/01/2021</td>
+                    <td>Contemplado</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Yasmin</td>
+                    <td>CRF HONDA 150</td>
+                    <td></td>
+                    <td>19/05/2021</td>
+                    <td>Novo</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Joyce</td>
+                    <td>Neo 125</td>
+                    <td></td>
+                    <td>17/02/2021</td>
+                    <td>Contemplado</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Luiz</td>
+                    <td>NMAX 250</td>
+                    <td></td>
+                    <td>10/06/2021</td>
+                    <td>Em Andamento</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Amanda</td>
+                    <td>BROS 150</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Contemplado</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Kelli</td>
+                    <td>Bandit 600</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Novo</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Kelli</td>
+                    <td>Bandit 600</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Novo</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Kelli</td>
+                    <td>Bandit 600</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Novo</td>
+                </tr>
+                <tr class="line">
+                    <td><input type="checkbox"></td>
+                    <td>Kelli</td>
+                    <td>Bandit 600</td>
+                    <td></td>
+                    <td>14/06/2021</td>
+                    <td>Novo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#myTable').DataTable({
+                "order": [[ 0, "desc" ]],
+                "language": {
+                "sSearch": "&#128269",
+                //"sInfo": "Encontrados _MAX_ itens correspondem a sua busca",
+                "info": "Mostrando página _PAGE_ de _PAGES_ de _MAX_ itens que correspondem a sua busca",
+                //"sInfoEmpty": "0 agendamentos",
+                //"sInfoFiltered": "(filtrado de um total de MAX agendamentos)",
+                "sLengthMenu": "Mostrar _MENU_ itens por página",
+                //"sZeroRecords": "Nenhum agendamento encontrado",
+                //"sEmptyTable": "Zero Agendamentos",
+                    "paginate": {
+                    "previous": "Anterior ",
+                    "next": " Próxima"
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
